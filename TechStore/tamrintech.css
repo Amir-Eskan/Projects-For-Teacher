@@ -144,6 +144,7 @@ width: 40%;
    width: 300px; 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); 
   border-radius: 5px;
+  
 }
 .img{
     >img{
@@ -205,12 +206,12 @@ font-size: 22px;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    width: 1300px;
+width: min(95%, 1300px);
     flex-wrap: wrap;
     gap: 40px 0px;
 }
 .contaner6{
-width: 1300px;
+width: min(95%, 1300px);
 display: flex;
 margin:50px auto;
 justify-content: space-around;
@@ -242,7 +243,7 @@ color: #7c3aed;
       padding: 5px 20px;
 }
 .contaner7{
-width: 1300px;
+width: min(95%, 1300px);
 margin:110px auto;
 display: flex;
 justify-content: center;
@@ -256,7 +257,7 @@ background: linear-gradient(
 border-radius: 5px;
  }
 .right{
-width: 720px;
+width: 60%;
 >img{
 width: 100%;
 object-fit: cover;
@@ -268,7 +269,7 @@ border-radius: 5px;
 }
 .left{
 margin-top: 20px;
-width: 580px;
+width: 40%;
 >h1{
     color:#7c3aed;
     font-size: 40px;
@@ -293,7 +294,7 @@ font-size: 20px;
     font-size: 27px;
 }
 .contaner8{
-    width: 1300px;
+width: min(95%, 1300px);
     margin:30px auto;
 display: flex;
 gap:0px 25px;
@@ -372,14 +373,14 @@ border-radius: 50%;
 }
 }
 .contaner9{
-width: 1300px;
+width: min(95%, 1300px);
 margin: auto;
 display: flex;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); 
   border-radius: 5px;
  
 >.img-text{
-width: 800px;
+width: 70%;
 
 >h3{
 width: 100%;
@@ -411,7 +412,7 @@ object-fit: cover;
 
 }
 >.text-last{
-width:500px;
+width:30%;
 position: relative;
 margin: auto; 
 top: 115px;
@@ -447,7 +448,7 @@ font-size: 35px;
 }
 }
 .contaner10 {
-    width: 800px;
+  width: min(95%, 800px);
     margin: 100px auto;
     padding: 35px;
     border-radius: 25px;
@@ -549,7 +550,7 @@ display: flex;
         linear-gradient(160deg, #020617, #0b1120 60%, #111827);
 
     color: white;
-        width: 1300px;
+  width: min(95%, 1300px);
         margin: auto;
         border-radius: 8px;
 justify-content: space-around;
@@ -597,7 +598,7 @@ font-size: 22px;
 .footer{
 display: flex;
 align-items: center;
-width: 1300px;
+width: min(95%, 1300px);
 justify-content: space-around;
 margin:30px auto;
   background:
