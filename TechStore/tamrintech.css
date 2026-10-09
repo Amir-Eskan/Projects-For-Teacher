@@ -208,7 +208,7 @@ font-size: 22px;
     margin: auto;
 width: min(95%, 1260px);
     flex-wrap: wrap;
-    gap: 40px 0px;
+    gap: 20px 0px;
 }
 .contaner6{
 width: min(95%, 1200px);
