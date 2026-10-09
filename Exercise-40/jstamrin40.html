@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:
+        radial-gradient(circle at 50% 120%, #4f46e5 0%, transparent 35%),
+        radial-gradient(circle at 0% 0%, #312e81 0%, transparent 30%),
+        linear-gradient(160deg, #020617, #0b1120 60%, #111827);
+
+        }
+        .contaner{
+align-items: flex-start;
+margin:350px auto;
+gap: 20px;
+display: flex;
+
+
+>div{
+    box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.4),
+    0 0 35px rgba(255, 255, 255, 0.2);
+height: auto;
+      width: 300px;
+margin: 20px;
+border-radius: 10px;
+
+      >img{
+        width: 100%;
+border-radius: 10px;
+        object-fit: cover;
+        
+      }
+      >button{
+font-size: 20px;
+border-radius: 8px;
+background-color: darkmagenta;
+color: white;
+transition: ease .5s;
+      }
+      >p{
+        color: white;
+        font-size: 20px;
+      }
+      >h3{
+        color: white;
+      }
+}
+
+
+
+        }
+        .contaner button:hover{
+    background-color: white;
+    color: darkmagenta;
+}
+ul>li{
+    display: flex;
+    margin: 110px auto;
+     width: auto;
+    min-height: 70px;
+
+    margin-bottom: 10px;
+    padding: 12px;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+
+    color: white;
+
+    transition: 0.4s;
+
+}
+ul{
+     position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 400px;
+    max-height:80vh;
+    overflow-y: auto;
+
+    margin: 0;
+    padding: 10px;
+justify-content: center;
+    background: #111827;
+    border: 1px solid #7c3aed;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+
+    list-style: none;
+    
+}
+ul>li>img{
+        width: 100px;
+        object-fit: cover;
+        height:100px;
+        border-radius: 5px;
+
+    }
+
+.more{
+    display: none;
+   
+}
+ .more>p{
+        color: white;
+        font-size: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="contaner">
+<div>
+    <img src="./img2/EiAveDVXn_ochfUanZuQv1d1qFiiI-YmlbUSHLxHx3WUssxxJUA5Dm-7ZRRIcVR4Lnjdozm4QhDuD_wl5toH2qiYH6d9pRZCbWidNlLub2IzoaeK6vaKU9xITnkA_d92jeIClh2vysA7bw5UHOMNWrFzUbu01leZIyUfOPv0LtM.jpg" alt="">
+    <h3>iphone 16 </h3>
+    <p>$800</p>
+    <div class="more">
+          <p>رنگ:صورتی</p>
+        <p>حافظه:128/256/512</p>
+        <p>گارانتی:18ماه</p>
+        <p>باتری:3691</p>
+    </div>
+    <button data-click="off" onclick="myclick(this)">اطلاعات بیشتر</button>
+    <button data-cont="1" data-eskan="off" onclick="mybot(this,'iphone 16 Max')">افزودن به سبد خرید</button>
+</div>
+<div>
+    <img src="./img2/image.png" alt="">
+    <h3>iphone 17 Max</h3>
+    <p>$1100</p>
+    <div class="more">
+        <p>رنگ:تیتانیوم نارنجی</p>
+        <p>حافظه:128/256/512</p>
+        <p>گارانتی:18ماه</p>
+        <p>باتری:5080</p>
+    </div>
+    <button data-click="off" onclick="myclick(this)">اطلاعات بیشتر</button>
+    <button data-cont="1" data-eskan="off" onclick="mybot(this,'iphone 17 Max')">افزودن به سبد خرید</button>
+</div>
+<div>
+    <img src="./img2/THqmumSveDqxoi48XiQe5diwVs0Qq1UeXwWmqA4y9XZc6rHfleA6yex9mwtN9uNB8ihmxR8h4Md_PGSgNeZlDgtv5ZCT_7zpl-ecGkAflh9z7EzhFuK3quvAeHbWaEDu04AKPTOJju2LdaX9UYKNKvViQNQb5tMFeEUDcMCeqLE.jpg" alt="">
+    <h3>iphone 18 Max</h3>
+    <p>$1500</p>
+    <div class="more">
+         <p>رنگ:بنفش </p>
+        <p>حافظه:128/256/512</p>
+        <p>گارانتی:18ماه</p>
+        <p>باتری:5200</p>
+    </div>
+    <button data-click="off" onclick="myclick(this)">اطلاعات بیشتر</button>
+    <button data-cont="1" data-eskan="off" onclick="mybot(this,'iphone 18 Max')">افزودن به سبد خرید</button>
+</div>
+ 
+    
+    </div>
+
+   <ul id="ul">
+  
+   </ul>
+  
+</body>
+<script>
+
+function myclick(s){
+let det=s.getAttribute('data-click')
+let more=s.previousElementSibling
+if(det=='off'){
+    s.setAttribute('data-click','on')
+    more.style.display='block'
+      s.innerText='بستن'
+      s.style.backgroundColor='black'
+}else{
+  s.setAttribute('data-click','off')   
+    more.style.display='none'
+  s.innerText='اطلاعات بیشتر'
+  s.style.backgroundColor='darkmagenta'
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const ul=document.getElementById('ul')
+    function mybot(s,text){
+let bot=s.getAttribute('data-eskan')
+if(bot=='off'){
+
+s.setAttribute('data-eskan','on')
+
+let li=document.createElement('li')
+let img=document.createElement('img')
+img.src=s.parentElement.children[0].src
+li.innerHTML=`
+
+<h3>${text}</h3>
+
+<p>${s.parentElement.children[2].innerText}</p>
+<p>${s.getAttribute('data-cont')}</p>
+<p onclick="del(this)">x</p>
+
+`
+li.prepend(img)
+ul.append(li)
+
+}else{
+let cont=s.getAttribute('data-cont')
+cont++
+s.setAttribute('data-cont',cont)
+let myli=document.querySelectorAll('ul>li')
+for(let i=0;i<myli.length;i++){
+if(myli[i].children[1].innerText==text){
+
+    myli[i].children[3].innerText=s.getAttribute('data-cont')
+}}
+}
+
+
+    }
+
+
+
+  
+
+
+
+
+
+
+  function del(s){
+if(confirm('آیا این محصولو از سبد خرید میخواهید حذف کنید')){
+s.setAttribute('data-eskan','off')
+s.parentElement.remove()
+}
+       }
+
+</script>
+</html>
